@@ -36,7 +36,7 @@ describe "User pages" do
 
         it { should have_selector('title', text: 'Sign up') }
         it { should have_content('errors') }
-        it { should have_selector('div.field_with_errors') }
+        it { should_not have_content('Password digest') }
       end
     end
 
